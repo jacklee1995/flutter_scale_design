@@ -51,8 +51,8 @@ double scaledHeight = scaleHeight(50); // 根据屏幕大小缩放高度
 
 ```dart
 double scaledWidth = scaleWidth(100); // 根据屏幕大小缩放宽度
-double 屏幕宽度的三分之一 = perWidth(3); // 获取屏幕宽度的三分之一
-double 屏幕高度的五分之一 = perHeight(5); // 获取屏幕高度的五分之一
+double oneThirdScreenWidth = perWidth(3); // 获取屏幕宽度的三分之一
+double oneFifthScreenHeight = perHeight(5); // 获取屏幕高度的五分之一
 ```
 
 ## 示例
@@ -100,7 +100,6 @@ class MyApp extends StatelessWidget {
 ```
 
 在此示例中，布局尺寸和字体大小按比例缩放以适应当前屏幕大小，从而创建了响应式设计。
-
 
 ## 许可证
 
