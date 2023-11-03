@@ -1,5 +1,7 @@
 # Scale Design
 
+[中文文档](./README_CN.md)
+
 The **Scale Design** library provides utilities for managing screen dimensions and creating responsive layouts in Flutter applications, allowing you to achieve screen size proportion scaling. It includes functions for scaling dimensions proportionally and obtaining screen width and height ratios. This is particularly useful when designing for different device screen sizes and orientations.
 
 ## Installation
