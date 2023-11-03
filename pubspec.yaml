@@ -1,7 +1,13 @@
 name: scale_design
 description: A Flutter component library based on relative size design.
-
 version: 0.0.1
+auth:
+  name: Jcak Lee
+  email: 291148484@163.com
+  home: http://thispage.tech
+maintainer: Jcak Lee
+repository: https://github.com/jacklee1995/flutter_scale_design
+issue_tracker: https://github.com/jacklee1995/flutter_scale_design/issues
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -10,7 +16,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-  cupertino_icons: ^1.0.2
   flutter_svg: ^2.0.8
 
 dev_dependencies:
@@ -20,6 +25,5 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 
 flutter:
-
   uses-material-design: true
 
