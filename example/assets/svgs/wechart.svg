@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   t="1642307832112"
+   class="icon"
+   viewBox="0 0 1024 1024"
+   version="1.1"
+   p-id="29399"
+   width="200"
+   height="200"
+   id="svg8"
+   sodipodi:docname="logo-wechart.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     id="namedview10"
+     showgrid="false"
+     inkscape:zoom="1.8101934"
+     inkscape:cx="194.45436"
+     inkscape:cy="196.11165"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8"
+     inkscape:document-rotation="0"
+     inkscape:pagecheckerboard="0"
+     showguides="false" />
+  <defs
+     id="defs4">
+    <style
+       type="text/css"
+       id="style2">@font-face { font-family: &quot;Leelawadee UI Web&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/leelawadeeui-thai/leelawadeeui-light.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/leelawadeeui-thai/leelawadeeui-light.woff&quot;) format(&quot;woff&quot;); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Leelawadee UI Web&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/leelawadeeui-thai/leelawadeeui-semilight.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/leelawadeeui-thai/leelawadeeui-semilight.woff&quot;) format(&quot;woff&quot;); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Leelawadee UI Web&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/leelawadeeui-thai/leelawadeeui-regular.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/leelawadeeui-thai/leelawadeeui-regular.woff&quot;) format(&quot;woff&quot;); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Leelawadee UI Web&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/leelawadeeui-thai/leelawadeeui-semibold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/leelawadeeui-thai/leelawadeeui-semibold.woff&quot;) format(&quot;woff&quot;); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Leelawadee UI Web&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/leelawadeeui-thai/leelawadeeui-bold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/leelawadeeui-thai/leelawadeeui-bold.woff&quot;) format(&quot;woff&quot;); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Arabic)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-arabic/segoeui-light.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-arabic/segoeui-light.woff&quot;) format(&quot;woff&quot;); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Arabic)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-arabic/segoeui-semilight.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-arabic/segoeui-semilight.woff&quot;) format(&quot;woff&quot;); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Arabic)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-arabic/segoeui-regular.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-arabic/segoeui-regular.woff&quot;) format(&quot;woff&quot;); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Arabic)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-arabic/segoeui-semibold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-arabic/segoeui-semibold.woff&quot;) format(&quot;woff&quot;); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Arabic)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-arabic/segoeui-bold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-arabic/segoeui-bold.woff&quot;) format(&quot;woff&quot;); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Cyrillic)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-cyrillic/segoeui-light.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-cyrillic/segoeui-light.woff&quot;) format(&quot;woff&quot;); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Cyrillic)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-cyrillic/segoeui-semilight.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-cyrillic/segoeui-semilight.woff&quot;) format(&quot;woff&quot;); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Cyrillic)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-cyrillic/segoeui-regular.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-cyrillic/segoeui-regular.woff&quot;) format(&quot;woff&quot;); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Cyrillic)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-cyrillic/segoeui-semibold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-cyrillic/segoeui-semibold.woff&quot;) format(&quot;woff&quot;); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Cyrillic)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-cyrillic/segoeui-bold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-cyrillic/segoeui-bold.woff&quot;) format(&quot;woff&quot;); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (East European)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-easteuropean/segoeui-light.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-easteuropean/segoeui-light.woff&quot;) format(&quot;woff&quot;); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (East European)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-easteuropean/segoeui-semilight.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-easteuropean/segoeui-semilight.woff&quot;) format(&quot;woff&quot;); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (East European)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-easteuropean/segoeui-regular.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-easteuropean/segoeui-regular.woff&quot;) format(&quot;woff&quot;); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (East European)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-easteuropean/segoeui-semibold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-easteuropean/segoeui-semibold.woff&quot;) format(&quot;woff&quot;); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (East European)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-easteuropean/segoeui-bold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-easteuropean/segoeui-bold.woff&quot;) format(&quot;woff&quot;); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Greek)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-greek/segoeui-light.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-greek/segoeui-light.woff&quot;) format(&quot;woff&quot;); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Greek)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-greek/segoeui-semilight.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-greek/segoeui-semilight.woff&quot;) format(&quot;woff&quot;); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Greek)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-greek/segoeui-regular.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-greek/segoeui-regular.woff&quot;) format(&quot;woff&quot;); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Greek)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-greek/segoeui-semibold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-greek/segoeui-semibold.woff&quot;) format(&quot;woff&quot;); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Greek)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-greek/segoeui-bold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-greek/segoeui-bold.woff&quot;) format(&quot;woff&quot;); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Hebrew)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-hebrew/segoeui-light.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-hebrew/segoeui-light.woff&quot;) format(&quot;woff&quot;); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Hebrew)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-hebrew/segoeui-semilight.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-hebrew/segoeui-semilight.woff&quot;) format(&quot;woff&quot;); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Hebrew)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-hebrew/segoeui-regular.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-hebrew/segoeui-regular.woff&quot;) format(&quot;woff&quot;); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Hebrew)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-hebrew/segoeui-semibold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-hebrew/segoeui-semibold.woff&quot;) format(&quot;woff&quot;); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Hebrew)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-hebrew/segoeui-bold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-hebrew/segoeui-bold.woff&quot;) format(&quot;woff&quot;); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Vietnamese)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-vietnamese/segoeui-light.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-vietnamese/segoeui-light.woff&quot;) format(&quot;woff&quot;); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Vietnamese)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-vietnamese/segoeui-semilight.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-vietnamese/segoeui-semilight.woff&quot;) format(&quot;woff&quot;); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Vietnamese)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-vietnamese/segoeui-regular.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-vietnamese/segoeui-regular.woff&quot;) format(&quot;woff&quot;); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Vietnamese)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-vietnamese/segoeui-semibold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-vietnamese/segoeui-semibold.woff&quot;) format(&quot;woff&quot;); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Vietnamese)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-vietnamese/segoeui-bold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-vietnamese/segoeui-bold.woff&quot;) format(&quot;woff&quot;); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (West European)&quot;; src: local(&quot;Segoe UI Light&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-light.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-light.woff&quot;) format(&quot;woff&quot;); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (West European)&quot;; src: local(&quot;Segoe UI SemiLight&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semilight.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semilight.woff&quot;) format(&quot;woff&quot;); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (West European)&quot;; src: local(&quot;Segoe UI&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-regular.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-regular.woff&quot;) format(&quot;woff&quot;); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (West European)&quot;; src: local(&quot;Segoe UI SemiBold&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff&quot;) format(&quot;woff&quot;); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (West European)&quot;; src: local(&quot;Segoe UI Bold&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-bold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-bold.woff&quot;) format(&quot;woff&quot;); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/selawik/selawik-light.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/selawik/selawik-light.woff&quot;) format(&quot;woff&quot;); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/selawik/selawik-semilight.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/selawik/selawik-semilight.woff&quot;) format(&quot;woff&quot;); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/selawik/selawik-regular.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/selawik/selawik-regular.woff&quot;) format(&quot;woff&quot;); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/selawik/selawik-semibold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/selawik/selawik-semibold.woff&quot;) format(&quot;woff&quot;); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/selawik/selawik-bold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/selawik/selawik-bold.woff&quot;) format(&quot;woff&quot;); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Armenian)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-armenian/segoeui-light.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-armenian/segoeui-light.woff&quot;) format(&quot;woff&quot;); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Armenian)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-armenian/segoeui-semilight.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-armenian/segoeui-semilight.woff&quot;) format(&quot;woff&quot;); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Armenian)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-armenian/segoeui-regular.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-armenian/segoeui-regular.woff&quot;) format(&quot;woff&quot;); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Armenian)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-armenian/segoeui-semibold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-armenian/segoeui-semibold.woff&quot;) format(&quot;woff&quot;); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Armenian)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-armenian/segoeui-bold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-armenian/segoeui-bold.woff&quot;) format(&quot;woff&quot;); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Georgian)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-georgian/segoeui-light.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-georgian/segoeui-light.woff&quot;) format(&quot;woff&quot;); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Georgian)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-georgian/segoeui-semilight.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-georgian/segoeui-semilight.woff&quot;) format(&quot;woff&quot;); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Georgian)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-georgian/segoeui-regular.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-georgian/segoeui-regular.woff&quot;) format(&quot;woff&quot;); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Georgian)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-georgian/segoeui-semibold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-georgian/segoeui-semibold.woff&quot;) format(&quot;woff&quot;); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Segoe UI Web (Georgian)&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-georgian/segoeui-bold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-georgian/segoeui-bold.woff&quot;) format(&quot;woff&quot;); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Leelawadee UI Web&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/leelawadeeui-thai/leelawadeeui-semilight.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/leelawadeeui-thai/leelawadeeui-semilight.woff&quot;) format(&quot;woff&quot;); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: &quot;Leelawadee UI Web&quot;; src: url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/leelawadeeui-thai/leelawadeeui-bold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;https://static2.sharepointonline.com/files/fabric/assets/fonts/leelawadeeui-thai/leelawadeeui-bold.woff&quot;) format(&quot;woff&quot;); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: FabricMDL2Icons; src: url(&quot;fabric-icons.woff&quot;) format(&quot;woff&quot;); }
+@font-face { font-family: FabricMDL2Icons; src: url(&quot;fabric-icons.woff&quot;) format(&quot;woff&quot;); }
+@font-face { font-family: FabricMDL2Icons; src: url(&quot;fabric-icons.woff&quot;) format(&quot;woff&quot;); }
+@font-face { font-family: FabricMDL2Icons; src: url(&quot;fabric-icons.woff&quot;) format(&quot;woff&quot;); }
+</style>
+  </defs>
+  <path
+     style="fill:#000000;stroke-width:5.04356"
+     id="path2210"
+     d="" />
+  <path
+     style="fill:#000000;stroke-width:13.0032"
+     id="path2190"
+     d="" />
+  <path
+     style="fill:#000000;stroke-width:13.0032"
+     id="path2170"
+     d="" />
+  <path
+     style="fill:#000000;stroke-width:0.124941"
+     id="path4545"
+     d="" />
+  <path
+     style="fill:#919191;fill-opacity:1;stroke-width:4.16027"
+     d="M 665.53788,675.06839 C 583.68772,650.0956 550.70123,584.43329 596.42587,537.49627 616.86958,516.51043 702.40573,492.39634 756.402,492.39634 c 42.648,0 121.82408,37.96118 145.96954,69.98545 56.84756,75.39749 -105.64593,152.71248 -236.83366,112.6866 z"
+     id="path44319" />
+  <path
+     style="fill:#168743;fill-opacity:1;stroke-width:2.12839"
+     d="M 368.87914,447.98695 C 188.29537,418.9754 179.77631,338.53277 353.8056,305.65276 c 84.46785,-15.95884 235.67932,-11.56291 295.54693,8.59194 43.69051,14.70873 75.65305,41.37793 75.6416,63.11454 -0.0108,22.0778 -19.49931,36.09829 -75.08105,54.01733 -82.13792,26.48056 -182.62682,32.41989 -281.03394,16.61038 z"
+     id="path44316" />
+  <path
+     style="fill:#14d46a;fill-opacity:1;stroke-width:1.06913"
+     d="m 218.51576,797.8697 c 0.0122,-3.80899 2.82724,-18.69858 6.25666,-33.08806 3.4294,-14.38947 6.29727,-32.96982 6.37301,-41.28965 l 0.13777,-15.12695 -30.45758,-28.68011 c -36.27727,-34.16016 -57.44699,-62.04508 -73.59229,-96.9362 -18.82336,-40.6786 -22.8787,-59.644 -22.94282,-107.29529 -0.064,-47.58029 5.61815,-73.33761 24.64223,-111.70373 40.16868,-81.00867 121.42892,-143.62619 218.44837,-168.33195 69.62243,-17.72916 131.89792,-18.23232 199.77607,-1.6141 84.26577,20.63029 149.81114,63.03595 201.41394,130.30798 18.63428,24.2926 42.78394,85.13934 50.91185,122.29355 1.79345,8.1981 -0.46337,1.34837 -13.06989,1.403 -17.88434,0.0775 -74.01957,1.96942 -98.23352,8.09588 -68.4995,17.33131 -132.38914,61.06214 -169.03568,115.70065 -33.13788,49.40728 -39.14334,103.71779 -30.83924,162.34429 2.51361,17.74604 6.90402,30.6735 6.03002,31.5491 -3.57254,3.57909 -86.92737,1.71001 -119.52375,-3.91568 -59.53117,-10.27434 -62.78542,-9.6122 -120.69511,24.55862 -17.38734,10.25972 -32.51514,18.65405 -33.61736,18.65405 -1.10222,0 -1.99442,-3.11642 -1.98267,-6.9254 z M 348.63707,429.08823 c 10.51458,-4.01053 24.42251,-16.96271 30.19762,-28.12246 10.16002,-19.63311 2.17793,-51.57189 -16.34683,-65.40863 -11.4354,-8.54148 -39.20927,-10.1322 -53.91399,-3.08789 -13.75172,6.58779 -25.99819,24.32568 -28.19134,40.83256 -4.9745,37.44096 33.62964,68.99324 68.25454,55.78642 z m 244.73866,-2.81246 c 17.53864,-9.03275 25.6246,-22.39212 26.97623,-44.56915 0.95249,-15.62847 -0.0166,-20.30744 -6.06618,-29.29832 -3.95981,-5.88479 -11.96906,-13.97034 -17.79836,-17.96791 -14.96821,-10.26483 -43.15323,-8.66049 -58.74311,3.34375 -29.34412,22.59508 -24.98289,71.74277 7.82088,88.1351 16.16486,8.07771 32.58095,8.20014 47.81054,0.35653 z"
+     id="path44313"
+     sodipodi:nodetypes="ssscsssssssssssssssssssssssssscssss" />
+  <path
+     style="fill:#e9e9e9;fill-opacity:1;stroke-width:0.537128"
+     d="m 849.08842,870.78136 c -24.96729,-14.88934 -36.05842,-19.58799 -48.06563,-20.3625 -8.35926,-0.53896 -12.39726,0 -18.57478,2.50244 -4.34146,1.75527 -15.67123,4.79427 -25.17728,6.75315 -15.19122,3.13064 -21.6249,3.55389 -53.14216,3.49605 -33.18555,-0.0604 -37.3372,-0.38495 -55.69514,-4.3452 -81.87181,-17.6627 -145.87795,-63.65909 -178.28181,-128.11772 -13.66331,-27.17952 -18.23254,-46.59366 -18.31309,-77.81037 -0.084,-32.52062 5.51383,-56.67213 19.96856,-86.15412 12.65275,-25.80657 26.94957,-44.1599 49.21427,-63.17809 41.44441,-35.40124 90.22851,-57.29825 144.95985,-65.06619 18.60656,-2.64085 63.71072,-2.64834 82.39824,-0.0111 78.1753,11.02117 146.98504,52.577 186.97532,112.91852 33.43097,50.44423 38.7966,115.79712 13.74048,167.3568 -14.22895,29.27989 -43.40909,64.10441 -75.41325,90.00076 -16.37392,13.24911 -20.01588,17.99495 -20.01588,26.08287 0,1.63111 2.74656,11.26485 6.10355,21.40822 6.07602,18.35925 7.13829,23.33508 4.95918,23.22938 -0.62945,-0.0284 -7.66766,-3.94567 -15.64043,-8.70017 z M 639.5046,607.76962 c 15.32428,-8.18187 20.37303,-14.88659 20.37303,-27.0556 0,-11.84672 -8.23864,-24.11618 -20.59955,-30.67777 -11.46586,-6.08654 -32.29951,-3.32922 -41.75642,5.5265 -8.50895,7.96804 -10.25851,22.97691 -4.1985,36.01757 9.2506,19.90651 27.34109,26.24837 46.18144,16.1893 z m 175.38936,0.61347 c 17.19225,-8.56406 24.32024,-20.42671 20.65375,-34.37282 -5.04834,-19.20206 -23.46773,-30.32046 -43.91932,-26.51082 -10.77315,2.00673 -17.68221,6.07237 -21.62386,12.72452 -4.47746,7.55641 -5.34175,15.61214 -2.67588,24.9413 6.76956,23.68993 26.89578,33.514 47.56531,23.21782 z"
+     id="path44310" />
+</svg>

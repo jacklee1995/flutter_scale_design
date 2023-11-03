@@ -1,0 +1,87 @@
+import 'dart:ui' as ui;
+import 'package:flutter/services.dart';
+import 'package:flutter/gestures.dart';
+import 'package:flutter/material.dart';
+
+import '../../size.dart';
+
+class TSpan extends TextSpan {
+  TSpan({
+    String? text,
+    List<InlineSpan>? children,
+    TextStyle? style,
+    GestureRecognizer? recognizer,
+    MouseCursor? mouseCursor,
+    PointerEnterEventListener? onEnter,
+    PointerExitEventListener? onExit,
+    String? semanticsLabel,
+    Locale? locale,
+    bool? spellOut,
+    bool inherit = true,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    ui.TextLeadingDistribution? leadingDistribution,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    List<ui.FontVariation>? fontVariations,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+    String? debugLabel,
+    String? fontFamily,
+    List<String>? fontFamilyFallback,
+    String? package,
+    TextOverflow? overflow,
+  }) : super(
+          text: text,
+          children: children,
+          recognizer: recognizer,
+          mouseCursor: mouseCursor,
+          onEnter: onEnter,
+          onExit: onExit,
+          semanticsLabel: semanticsLabel,
+          locale: locale,
+          spellOut: spellOut,
+          style: style ??
+              TextStyle(
+                inherit: inherit,
+                color: color ?? Colors.black,
+                backgroundColor: backgroundColor,
+                fontSize: fontSize == null
+                    ? scaleHeight(14.0)
+                    : scaleHeight(fontSize),
+                fontWeight: fontWeight,
+                fontStyle: fontStyle,
+                letterSpacing: letterSpacing,
+                wordSpacing: wordSpacing,
+                textBaseline: textBaseline,
+                height: height == null ? scaleHeight(1.0) : scaleHeight(height),
+                leadingDistribution: leadingDistribution,
+                locale: locale,
+                foreground: foreground,
+                background: background,
+                shadows: shadows,
+                fontFeatures: fontFeatures,
+                fontVariations: fontVariations,
+                decoration: decoration,
+                decorationColor: decorationColor,
+                decorationStyle: decorationStyle,
+                decorationThickness: decorationThickness,
+                debugLabel: debugLabel,
+                fontFamily: fontFamily,
+                fontFamilyFallback: fontFamilyFallback,
+                package: package,
+                overflow: overflow,
+              ),
+        );
+}
