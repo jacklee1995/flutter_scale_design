@@ -106,13 +106,4 @@ class MyApp extends StatelessWidget {
 
 此包是开源的，根据 [MIT 许可证](LICENSE) 提供。
 
-请随意在你的Flutter项目中使用它，欢迎在[GitHub存储库](https://github.com/your-repo-link)上贡献或提交问题。
-
----
-
-**注意：** 请确保将 `your-repo-link` 替换为存储此包的GitHub存储库的实际链接。
-
-```
-
-请根据需要自定义示例代码和GitHub存储库的链接。这个`README.md`提供了有关该包的介绍，安装说明，使用指南，示例和许可信息。
-```
+请随意在你的Flutter项目中使用它，欢迎在[GitHub存储库](https://github.com/jacklee1995/flutter_scale_design)上贡献或提交问题。

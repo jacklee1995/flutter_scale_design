@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
 
   // 初始化方法
   Future<void> initialization(BuildContext context) async {
+    // 初始化屏幕尺寸比例缩放
     Scale().init(
       context,
       LayoutConfigs.standardWidth,
