@@ -92,3 +92,21 @@ double perHeight(double n) {
   }
   throw Exception('Parameter n must be greater than 0.');
 }
+
+/// 根据屏幕大小获取按比例缩放的字体大小
+///
+/// 接受一个 [fontSize] 参数，表示设计中的字体大小，
+/// 然后将其根据当前设备的屏幕大小按比例进行缩放，
+/// 最终返回一个新的字体大小
+///
+/// 返回值：根据屏幕大小缩放后的字体大小
+///
+/// ```dart
+/// Text(
+///   'Hello, World!',
+///   style: TextStyle(fontSize: scaleFont(18)),
+/// );
+/// ```
+double scaleFont(double fontSize) {
+  return fontSize * Scale.screenWidth / Scale.standardWidth;
+}

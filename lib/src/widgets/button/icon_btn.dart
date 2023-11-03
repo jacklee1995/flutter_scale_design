@@ -2,34 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../../size.dart';
 
-// class SIcon extends Icon {
-//   SIcon(
-//     IconData? icon, {
-//     Key? key,
-//     double? size,
-//     double? fill,
-//     double? weight,
-//     double? grade,
-//     double? opticalSize,
-//     Color? color,
-//     List<Shadow>? shadows,
-//     String? semanticLabel,
-//     TextDirection? textDirection,
-//   }) : super(
-//           icon,
-//           key: key,
-//           size: size ?? scaleWidth(size!),
-//           fill: fill,
-//           weight: weight,
-//           grade: grade,
-//           opticalSize: opticalSize,
-//           color: color,
-//           shadows: shadows,
-//           semanticLabel: semanticLabel,
-//           textDirection: textDirection,
-//         );
-// }
-
 class IconBtn extends IconButton {
   final double width;
   final double height;
@@ -132,5 +104,23 @@ class IconBtn extends IconButton {
           isSelected: isSelected,
           selectedIcon: selectedIcon,
           icon: icon,
+        );
+}
+
+class IconBtn1 extends IconButton {
+  IconBtn1({
+    Key? key,
+    required IconData icon,
+    VoidCallback? onPressed,
+    double? iconSize,
+    Color? color,
+    bool disabled = false,
+  }) : super(
+          key: key,
+          icon: Icon(icon),
+          onPressed: disabled ? null : onPressed,
+          iconSize:
+              iconSize == null ? scaleHeight(24.0) : scaleHeight(iconSize),
+          color: color,
         );
 }

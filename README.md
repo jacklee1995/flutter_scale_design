@@ -101,6 +101,184 @@ class MyApp extends StatelessWidget {
 
 In this example, the layout dimensions and font size are scaled proportionally to fit the current screen size, creating a responsive design.
 
+
+
+## Components
+
+### ElevatedBtn
+
+ElevatedBtn inherits from Flutter's ElevatedButton class. Unlike ElevatedButton, ElevatedBtn adds width, height, and disabled parameters and uses the scaleHeight and scaleWidth functions to handle size issues in the constructor.
+
+- The width and height parameters control the size of the button. They are processed by the scaleWidth and scaleHeight functions to scale the button size based on screen width and height.
+- The disabled parameter controls whether the button is disabled. When disabled is true, the onPressed callback of the button is set to null, making the button disabled.
+
+Additionally, ElevatedBtn accepts all the parameters of ElevatedButton, and you can use them as needed. For example, you can set the button's color, shape, tooltip text, and more.
+
+```dart
+ElevatedBtn(
+  'Click Me', // Text on the button
+  width: 100.0, // Width of the button
+  height: 50.0, // Height of the button
+  onPressed: () {
+    // Code to execute when the button is clicked
+    print('Button clicked!');
+  },
+  backgroundColor: Colors.blue, // Background color of the button
+  foregroundColor: Colors.white, // Foreground color (text and icon color) of the button
+  elevation: 5.0, // Button elevation
+  shape: RoundedRectangleBorder( // Button shape
+    borderRadius: BorderRadius.circular(10.0), // Border radius
+  ),
+);
+```
+
+### OutlinedBtn
+
+OutlinedBtn inherits from Flutter's OutlinedButton class. Unlike OutlinedButton, OutlinedBtn adds width, height, and disabled parameters and uses the scaleHeight and scaleWidth functions to handle size issues in the constructor.
+
+- The width and height parameters control the size of the button. They are processed by the scaleWidth and scaleHeight functions to scale the button size based on screen width and height.
+- The disabled parameter controls whether the button is disabled. When disabled is true, the onPressed callback of the button is set to null, making the button disabled.
+
+Additionally, OutlinedBtn accepts all the parameters of OutlinedButton, and you can use them as needed. For example, you can set the button's style, text, and more.
+
+```dart
+OutlinedBtn(
+  'Click Me', // Text on the button
+  width: 100.0, // Width of the button
+  height: 50.0, // Height of the button
+  onPressed: () {
+    // Code to execute when the button is clicked
+    print('Button clicked!');
+  },
+  style: OutlinedButton.styleFrom( // Button style
+    side: BorderSide(color: Colors.blue, width: 2), // Border color and width
+  ),
+);
+```
+
+### FloatingActionBtn
+
+FloatingActionBtn is a custom floating action button class that inherits from Flutter's FloatingActionButton class. Unlike FloatingActionButton, FloatingActionBtn adds size and disabled parameters and uses the scaleHeight and scaleWidth functions to handle size issues in the constructor.
+
+- The size parameter controls the size of the button. It is processed by the scaleWidth function to scale the button size based on screen width.
+- The disabled parameter controls whether the button is disabled. When disabled is true, the onPressed callback of the button is set to null, making the button disabled.
+
+Additionally, FloatingActionBtn accepts all the parameters of FloatingActionButton, and you can use them as needed. For example, you can set the button's color, shape, tooltip text, and more.
+
+#### Explanation of _DefaultHeroTag Class
+
+_DefaultHeroTag is an internal class used to provide a default hero tag for FloatingActionButton. Hero tags are used in Flutter's Hero animations to identify widgets' starting and ending positions in the animation.
+
+For example:
+
+```dart
+FloatingActionBtn(
+  size: 56.0, // Button size
+  disabled: false, // Whether the button is disabled
+  child: Icon(Icons.add), // Icon on the button
+  tooltip: 'Add', // Button tooltip text
+  onPressed: () {
+    // Code to execute when the button is clicked
+    print 'Button clicked!';
+  },
+  backgroundColor: Colors.blue, // Button background color
+  foregroundColor: Colors.white, // Button foreground color (icon color)
+  elevation: 5.0, // Button elevation
+  shape: RoundedRectangleBorder( // Button shape
+    borderRadius: BorderRadius.circular(10.0), // Border radius
+  ),
+);
+```
+
+Here, we've created a FloatingActionBtn with a size of 56.0. When the button is clicked, it prints 'Button clicked!'. The button's background color is blue, foreground color (icon color) is white, elevation is 5.0, shape is a rounded rectangle with a border radius of 10.0.
+
+### T
+
+T is a custom text class that inherits from Flutter's Text class. Unlike Text, T uses the scaleFont function in the constructor to handle font size and line height issues in the style.
+
+Additionally, T accepts all the parameters of Text, and you can use them as needed. For example, you can set text color, background color, font size, font weight, font style, letter spacing, word spacing, text baseline, line height, foreground, background, shadow, font features, font variations, decoration, decoration color, decoration style, decoration thickness, debug label, font family, font family fallback, and more.
+
+T has two constructors: T and T.rich. The T constructor is used to create a T instance containing simple text, while the T.rich constructor is used to create a T instance containing rich text (multiple text fragments with different styles).
+
+Here are examples of how to use the T class:
+
+1. Using the T default constructor
+
+```dart
+T(
+  'Hello, world!', // Text content
+  color: Colors.red, // Text color
+  fontSize: 20.0, // Font size
+  fontWeight: FontWeight.bold, // Font weight
+);
+```
+
+2. Using the T.rich constructor
+
+```dart
+T.rich(
+  TSpan(
+    text: 'Hello, ',
+    children: <TSpan>[
+      TSpan(
+        text: 'world',
+        style: TextStyle(color: Colors.red),
+      ),
+      TSpan(
+        text: '!',
+      ),
+    ],
+  ), // Rich text content
+  fontSize: 20.0, // Font size
+  fontWeight: FontWeight.bold, // Font weight
+);
+```
+
+### TextBtn
+
+TextBtn inherits from Flutter's TextButton class. Unlike TextButton, TextBtn adds width, height, and disabled parameters and uses the scaleHeight and scaleWidth functions to handle size issues in the constructor.
+
+- The width and height parameters control the size of the button. They are processed by the scaleWidth and scaleHeight functions to scale the button size based on screen width and height.
+- The disabled parameter controls whether the button is disabled. When disabled is true, the onPressed callback of the button is set to null, making the button disabled.
+
+Additionally, TextBtn accepts all the parameters of TextButton, and you can use them as needed. For example, you can set the button's style, text, and more.
+
+```dart
+TextBtn(
+  'Click Me', // Text on the button
+  width: 100.0, // Width of the button
+  height: 50.0, // Height of the button
+  onPressed: () {
+    // Code to execute when the button is clicked
+    print('Button clicked!');
+  },
+  style: TextButton.styleFrom( // Button style
+    primary: Colors.blue, // Text color
+  ),
+);
+```
+
+### TSpan
+
+TSpan inherits from Flutter's TextSpan class. Unlike TextSpan, TSpan uses the scaleFont function in the constructor to handle font size and line height issues in the style.
+
+```dart
+TSpan(
+  text: 'Hello, ',
+  children: <InlineSpan>[
+    TSpan(
+      text: 'world',
+      style: TextStyle(color: Colors.red),
+    ),
+    TSpan(
+      text: '!',
+    ),
+  ],
+  fontSize: 20.0, // Font size
+  fontWeight: FontWeight.bold, // Font weight
+);
+```
+
 ## License
 
 This package is open-source and available under the [MIT License](LICENSE).
