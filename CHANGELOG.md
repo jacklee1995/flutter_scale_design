@@ -2,6 +2,10 @@
 
 All notable changes will be documented in this file.
 
+## [0.0.4] - 20231104
+
+Fix the size failure error of IconBtn component, and unify the original width and height attributes into size attributes.
+
 ## [0.0.2] - 2023-11-03
 
 ### Added

@@ -11,12 +11,10 @@ class ShareButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconBtn(
-      icon: Icon(icon),
+      icon: icon,
       onPressed: onPressed,
       backgroundColor: const Color.fromARGB(255, 233, 233, 233),
-      width: 30,
-      height: 30,
-      iconSize: 24,
+      size: 30,
     );
   }
 }
