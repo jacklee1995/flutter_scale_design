@@ -291,6 +291,28 @@ TSpan(
 );
 ```
 
+### SlideText
+
+一个垂直方向循环滑动切换的文本组件。
+
+例如：
+
+```dart
+SlideText(
+  [
+    '你有未读消息，请尽快处理1',
+    '你有未读消息，请尽快处理2',
+    '你有未读消息，请尽快处理3',
+    '你有未读消息，请尽快处理4',
+  ],
+  isScrollUp: true, // isScrollUp 参数默认为 true 表示向上滚动
+)
+```
+效果如下：
+
+![Alt text](WeChat_WXxk6Qn23T.gif)
+
+你可以通过 fontSize 参数设置文本大小。这个大小已经是基于 scaleFont 的尺寸了，因此你不需要手动调用 fontSize。如果需要控制高度，你可以指定 height 参数，它同样不需要手动调用 scaleHeight 参数。
 
 ## 许可证
 

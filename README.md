@@ -281,6 +281,32 @@ TSpan(
 );
 ```
 
+### SlideText
+
+A text widget that scrolls in a vertical loop.
+
+For example:
+
+```dart
+SlideText(
+  [
+    '你有未读消息，请尽快处理1',
+    '你有未读消息，请尽快处理2',
+    '你有未读消息，请尽快处理3',
+    '你有未读消息，请尽快处理4',
+  ],
+  // The isScrollUp parameter defaults to true, indicating upward scrolling
+  isScrollUp: true, 
+)
+```
+
+The effect is as follows:
+
+![Alt text](WeChat_WXxk6Qn23T.gif)
+
+You can set the text size through the fontSize parameter. This size is already based on the scaleFont size, so you don't need to manually call fontSize. If you need to control the height, you can specify the height parameter, which also does not require manual calling of the scaleHeight parameter.
+
+
 ## License
 
 This package is open-source and available under the [MIT License](LICENSE).
