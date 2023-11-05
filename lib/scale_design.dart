@@ -5,6 +5,7 @@ export './src/size.dart'
 
 export './src/widgets/text/t.dart' show T;
 export './src/widgets/text/t_span.dart' show TSpan;
+export './src/widgets/text/slide_text.dart' show SlideText;
 
 export './src/widgets/button/elevated_btn.dart' show ElevatedBtn;
 export './src/widgets/button/floating_action_btn.dart' show FloatingActionBtn;
