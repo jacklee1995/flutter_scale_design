@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:scale_design/scale_design.dart';
 
-import 'app/config.dart';
-import 'views/loginview.dart';
+import 'app/configs.dart';
+import 'views/basic_widget_examples.dart';
+import 'views/login_view.dart';
+import 'views/register_view.dart';
+import 'views/scrollable_Icons_card_example.dart';
+import 'views/slide_text_example.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +15,9 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // 初始化方法
+  // Initialization method
   Future<void> initialization(BuildContext context) async {
-    // 初始化屏幕尺寸比例缩放
+    // Initialize screen size ratio scaling
     Scale().init(
       context,
       LayoutConfigs.standardWidth,
@@ -55,13 +59,49 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: T(widget.title),
+        title: T(
+          widget.title,
+          fontSize: 20,
+        ),
       ),
       body: ListView(children: [
         ListTile(
           title: T(
-            'Login Page',
-            fontSize: 25,
+            'Basic Widgets Examples',
+            fontSize: 20,
+          ),
+          onTap: () => Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const BasicWidgetExamples(),
+            ),
+          ),
+        ),
+        ListTile(
+          title: T(
+            'ScrollableIconsCard Example',
+            fontSize: 20,
+          ),
+          onTap: () => Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const ScrollableIconsCardExample(),
+            ),
+          ),
+        ),
+        ListTile(
+          title: T(
+            'SlideTextExample Example',
+            fontSize: 20,
+          ),
+          onTap: () => Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const SlideTextExample(),
+            ),
+          ),
+        ),
+        ListTile(
+          title: T(
+            'Login Page demo',
+            fontSize: 20,
           ),
           onTap: () => Navigator.of(context).push(
             MaterialPageRoute(
@@ -71,12 +111,12 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         ListTile(
           title: T(
-            'Register Page',
-            fontSize: 25,
+            'Register Page demo',
+            fontSize: 20,
           ),
           onTap: () => Navigator.of(context).push(
             MaterialPageRoute(
-              builder: (context) => const LoginView(),
+              builder: (context) => const RegisterView(),
             ),
           ),
         ),

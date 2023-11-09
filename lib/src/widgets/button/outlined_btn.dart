@@ -1,4 +1,3 @@
-// OutlinedBtn
 import 'package:flutter/material.dart';
 
 import '../../size.dart';

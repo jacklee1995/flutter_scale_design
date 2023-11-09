@@ -103,8 +103,6 @@ class MyApp extends StatelessWidget {
 
 In this example, the layout dimensions and font size are scaled proportionally to fit the current screen size, creating a responsive design.
 
-
-
 ## Components
 
 ### ElevatedBtn
@@ -306,6 +304,65 @@ The effect is as follows:
 
 You can set the text size through the fontSize parameter. This size is already based on the scaleFont size, so you don't need to manually call fontSize. If you need to control the height, you can specify the height parameter, which also does not require manual calling of the scaleHeight parameter.
 
+### ScrollableIconsCard
+
+A component for displaying a set of horizontally scrollable icon cards. For example:
+
+```dart
+// 定义一组图标与触碰图标时的回调，假设下main这些图标在你的项目中存在
+List<Map<String, Object>> datas = [
+  {'img': 'assets/svgs/捡漏.svg', 'title': '捡漏', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/摇现金.svg', 'title': '摇现金', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/聚补贴.svg', 'title': '聚补贴', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/领券中心.svg', 'title': '领券中心', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/肥鱼.svg', 'title': '肥鱼', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/金币.svg', 'title': '金币', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/工厂购.svg', 'title': '工厂购', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/小时达.svg', 'title': '小时达', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/全球购.svg', 'title': '全球购', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/全部频道.svg', 'title': '全部频道', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/活动日历.svg', 'title': '活动日历', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/减肥助手.svg', 'title': '减肥助手', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/购1001铺.svg','title': '购1001铺','onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/小美庭院.svg', 'title': '小美庭院', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/动物餐厅.svg', 'title': '动物餐厅', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/购票票.svg', 'title': '购票票', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/地狗好屋.svg', 'title': '地狗好屋', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/飞鸟旅行.svg', 'title': '飞鸟旅行', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/资质规则.svg', 'title': '资质规则', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/分类.svg', 'title': '分类', 'onTap': () => print('捡漏')},
+];
+
+
+ScrollableIconsCard(
+  datas: datas,
+),
+```
+
+The effect is as follows:
+
+![Alt text](./srcst_dce7l1wUPi.gif)
+
+The default values of the various parameters of the ScrollableIconsCard component are as follows:
+
+| Parameter Name | Type | Default Value | Description |
+|:-|:-|:-|:-|
+| amount | int | 3 | The number of units in each column
+| spoutWidth | double | 80 |  The width of the spout
+| sliderWidth | double | 40 | The width of the slider
+| sliderHeight | double | 7 | The height of the spout and slider
+| spoutColor | Color | Color.fromARGB(255, 183, 183, 183) | The color of the spout
+| sliderColor | Color | Color.fromARGB(255, 255, 134, 13) | The color of the slider
+
+Where width is based on scaleWidth, height is based on scaleHeight.
+
+## Tips
+
+你可以在示例项目中找到更多的例子，如：
+
+|||
+|-|-|
+|![Alt text](srcst_2EGluNQWm9.png)|![Alt text](srcst_j2NirCBbhg.gif)|
 
 ## License
 

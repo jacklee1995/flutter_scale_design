@@ -308,11 +308,73 @@ SlideText(
   isScrollUp: true, // isScrollUp 参数默认为 true 表示向上滚动
 )
 ```
+
 效果如下：
 
-![Alt text](WeChat_WXxk6Qn23T.gif)
+![Alt text](srcst_WXxk6Qn23T.gif)
 
 你可以通过 fontSize 参数设置文本大小。这个大小已经是基于 scaleFont 的尺寸了，因此你不需要手动调用 fontSize。如果需要控制高度，你可以指定 height 参数，它同样不需要手动调用 scaleHeight 参数。
+
+### ScrollableIconsCard
+
+用于显示一组横向滚动的图标卡片的组件。例如：
+
+```dart
+// 定义一组图标与触碰图标时的回调，假设下main这些图标在你的项目中存在
+List<Map<String, Object>> datas = [
+  {'img': 'assets/svgs/捡漏.svg', 'title': '捡漏', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/摇现金.svg', 'title': '摇现金', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/聚补贴.svg', 'title': '聚补贴', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/领券中心.svg', 'title': '领券中心', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/肥鱼.svg', 'title': '肥鱼', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/金币.svg', 'title': '金币', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/工厂购.svg', 'title': '工厂购', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/小时达.svg', 'title': '小时达', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/全球购.svg', 'title': '全球购', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/全部频道.svg', 'title': '全部频道', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/活动日历.svg', 'title': '活动日历', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/减肥助手.svg', 'title': '减肥助手', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/购1001铺.svg','title': '购1001铺','onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/小美庭院.svg', 'title': '小美庭院', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/动物餐厅.svg', 'title': '动物餐厅', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/购票票.svg', 'title': '购票票', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/地狗好屋.svg', 'title': '地狗好屋', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/飞鸟旅行.svg', 'title': '飞鸟旅行', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/资质规则.svg', 'title': '资质规则', 'onTap': () => print('捡漏')},
+  {'img': 'assets/svgs/分类.svg', 'title': '分类', 'onTap': () => print('捡漏')},
+];
+
+
+ScrollableIconsCard(
+  datas: datas,
+),
+```
+
+效果如下：
+
+![Alt text](./srcst_dce7l1wUPi.gif)
+
+ScrollableIconsCard 组件的各个参数默认值如下：
+
+| 参数名 | 类型 | 默认值 | 描述 |
+|:-|:-|:-|:-|
+| amount | int | 3 | 每一列的单元数量
+| spoutWidth | double | 80 | 滑槽宽度
+| sliderWidth | double | 40 | 滑块宽度
+| sliderHeight | double | 7 | 滑槽和滑块的高度
+| spoutColor | Color | Color.fromARGB(255, 183, 183, 183) | 滑槽的颜色
+| sliderColor | Color | Color.fromARGB(255, 255, 134, 13) | 滑块的颜色
+
+其中宽度基于 scaleWidth、高度基于 scaleHeight。
+
+
+## 提示：
+
+你可以在示例项目中找到更多的例子，如：
+
+|||
+|-|-|
+|![Alt text](srcst_2EGluNQWm9.png)|![Alt text](srcst_j2NirCBbhg.gif)|
 
 ## 许可证
 
