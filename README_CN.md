@@ -370,7 +370,7 @@ ScrollableIconsCard 组件的各个参数默认值如下：
 
 ## 提示：
 
-你可以在示例项目中找到更多的例子，如：
+你可以在[示例项目](https://github.com/jacklee1995/flutter_scale_design/blob/master/example)中找到更多的例子，如：
 
 |||
 |-|-|

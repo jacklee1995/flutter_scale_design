@@ -300,7 +300,7 @@ SlideText(
 
 The effect is as follows:
 
-![Alt text](WeChat_WXxk6Qn23T.gif)
+![Alt text](srcst_WXxk6Qn23T.gif)
 
 You can set the text size through the fontSize parameter. This size is already based on the scaleFont size, so you don't need to manually call fontSize. If you need to control the height, you can specify the height parameter, which also does not require manual calling of the scaleHeight parameter.
 
@@ -358,7 +358,7 @@ Where width is based on scaleWidth, height is based on scaleHeight.
 
 ## Tips
 
-你可以在示例项目中找到更多的例子，如：
+You can find more examples in the [scale design example](https://github.com/jacklee1995/flutter_scale_design/tree/master/example), such as:
 
 |||
 |-|-|
