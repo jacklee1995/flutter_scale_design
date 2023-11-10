@@ -6,6 +6,7 @@ import 'views/basic_widget_examples.dart';
 import 'views/login_view.dart';
 import 'views/register_view.dart';
 import 'views/scrollable_Icons_card_example.dart';
+import 'views/shiny_button_example.dart';
 import 'views/slide_text_example.dart';
 
 void main() {
@@ -95,6 +96,18 @@ class _MyHomePageState extends State<MyHomePage> {
           onTap: () => Navigator.of(context).push(
             MaterialPageRoute(
               builder: (context) => const SlideTextExample(),
+            ),
+          ),
+        ),
+        // 光影按钮
+        ListTile(
+          title: T(
+            'ShinyButton Example',
+            fontSize: 20,
+          ),
+          onTap: () => Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const ShinyButtonExample(),
             ),
           ),
         ),

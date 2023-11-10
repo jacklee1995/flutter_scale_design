@@ -300,7 +300,7 @@ SlideText(
 
 The effect is as follows:
 
-![Alt text](srcst_WXxk6Qn23T.gif)
+![Alt text](./example/srcst_WXxk6Qn23T.gif)
 
 You can set the text size through the fontSize parameter. This size is already based on the scaleFont size, so you don't need to manually call fontSize. If you need to control the height, you can specify the height parameter, which also does not require manual calling of the scaleHeight parameter.
 
@@ -341,18 +341,18 @@ ScrollableIconsCard(
 
 The effect is as follows:
 
-![Alt text](./srcst_dce7l1wUPi.gif)
+![Alt text](./example/srcst_dce7l1wUPi.gif)
 
 The default values of the various parameters of the ScrollableIconsCard component are as follows:
 
-| Parameter Name | Type | Default Value | Description |
-|:-|:-|:-|:-|
-| amount | int | 3 | The number of units in each column
-| spoutWidth | double | 80 |  The width of the spout
-| sliderWidth | double | 40 | The width of the slider
-| sliderHeight | double | 7 | The height of the spout and slider
-| spoutColor | Color | Color.fromARGB(255, 183, 183, 183) | The color of the spout
-| sliderColor | Color | Color.fromARGB(255, 255, 134, 13) | The color of the slider
+| Parameter Name | Type   | Default Value                      | Description                        |
+| :------------- | :----- | :--------------------------------- | :--------------------------------- |
+| amount         | int    | 3                                  | The number of units in each column |
+| spoutWidth     | double | 80                                 | The width of the spout             |
+| sliderWidth    | double | 40                                 | The width of the slider            |
+| sliderHeight   | double | 7                                  | The height of the spout and slider |
+| spoutColor     | Color  | Color.fromARGB(255, 183, 183, 183) | The color of the spout             |
+| sliderColor    | Color  | Color.fromARGB(255, 255, 134, 13)  | The color of the slider            |
 
 Where width is based on scaleWidth, height is based on scaleHeight.
 
@@ -360,9 +360,117 @@ Where width is based on scaleWidth, height is based on scaleHeight.
 
 You can find more examples in the [scale design example](https://github.com/jacklee1995/flutter_scale_design/tree/master/example), such as:
 
-|||
-|-|-|
-|![Alt text](srcst_2EGluNQWm9.png)|![Alt text](srcst_j2NirCBbhg.gif)|
+|                                           |                                           |
+| ----------------------------------------- | ----------------------------------------- |
+| ![Alt text](./example/srcst_2EGluNQWm9.png) | ![Alt text](./example/srcst_j2NirCBbhg.gif) |
+
+
+
+### `ShinyButton` Widget
+
+The light and shadow button has its own light and shadow effect, and the light and shadow animation of the button can be realized by specifying a set of color values, such as:
+
+```dart
+class ShinyButtonExample extends StatelessWidget {
+  const ShinyButtonExample({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: T(
+          '光影按钮',
+          fontSize: 18,
+        ),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            // 当仅传递 onPressed 的时候
+            ShinyButton(onPressed: () {}),
+
+            const SizedBox(height: 30),
+
+            // 如果没有任何参数则成为禁用状态
+            ShinyButton(),
+
+            const SizedBox(height: 30),
+
+            // 你也可以自定义圆角、颜色、子元素等参数
+            ShinyButton(
+              borderRadius: 20,
+              colors: const [
+                Color.fromARGB(255, 112, 255, 117),
+                Color.fromARGB(255, 0, 81, 3),
+                Color.fromARGB(255, 112, 255, 117),
+              ],
+              child: T(
+                '自定义一些属性',
+                color: Colors.amber,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+              onPressed: () {
+                print('Button Pressed');
+              },
+            ),
+
+            const SizedBox(height: 30),
+
+            // 使用 disabled 属性禁用按钮
+            ShinyButton(
+              borderRadius: 20,
+              width: 300,
+              colors: const [
+                Color.fromARGB(255, 112, 255, 117),
+                Color.fromARGB(255, 0, 81, 3),
+                Color.fromARGB(255, 112, 255, 117),
+              ],
+              disabled: true,
+              onPressed: () {},
+              child: T(
+                '使用 disabled 属性禁用按钮',
+                color: Colors.white,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+
+            const SizedBox(height: 30),
+
+            // 一个登陆按钮的示例
+            ShinyButton(
+              borderRadius: 60,
+              width: 310,
+              colors: const [
+                Color.fromARGB(255, 255, 224, 112),
+                Color.fromARGB(255, 220, 77, 0),
+                Color.fromARGB(255, 255, 224, 112),
+              ],
+              onPressed: () {},
+              child: T(
+                '登 陆',
+                color: Colors.white,
+                fontSize: 23,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+```
+
+
+
+
+The effect is as follows (the jumping effect is generated after clicking):
+
+![1699612868395](./example/srcst_2868395.gif)
+
 
 ## License
 

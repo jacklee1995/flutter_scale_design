@@ -15,3 +15,4 @@ export './src/widgets/button/text_btn.dart' show TextBtn;
 export './src/widgets/button/circular_icon.dart' show CircularIcon;
 export 'src/components/scrollable_Icons_card.dart' show ScrollableIconsCard;
 export './src/components/toast.dart' show Toast;
+export './src/widgets/button/shiny_button.dart' show ShinyButton;

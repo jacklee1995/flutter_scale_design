@@ -2,6 +2,13 @@
 
 All notable changes will be documented in this file.
 
+## [0.0.8] - 20231110
+
+### Added
+
+- Add `ShinyButton` widget, which is a button with animated light and shadow effect.
+
+
 ## [0.0.4] - 20231104
 
 Fix the size failure error of IconBtn component, and unify the original width and height attributes into size attributes.

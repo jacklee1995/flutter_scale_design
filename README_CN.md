@@ -103,7 +103,6 @@ class MyApp extends StatelessWidget {
 
 在此示例中，布局尺寸和字体大小按比例缩放以适应当前屏幕大小，从而创建了响应式设计。
 
-
 ## 组件
 
 ### ElevatedBtn
@@ -114,7 +113,6 @@ ElevatedBtn 继承自 Flutter 的 ElevatedButton 类。与 ElevatedButton 不同
 - disabled 参数用于控制按钮是否禁用。当 disabled 为 true 时，按钮的 onPressed 回调会被设置为 null，使得按钮处于禁用状态。
 
 此外，ElevatedBtn 还接受 ElevatedButton 的所有参数，你可以根据需要使用它们。例如，你可以设置按钮的颜色、形状、提示文本等等。
-
 
 ```
 ElevatedBtn(
@@ -133,7 +131,6 @@ ElevatedBtn(
   ),
 );
 ```
-
 
 ### OutlinedBtn
 
@@ -158,7 +155,6 @@ OutlinedBtn(
   ),
 );
 ```
-
 
 ### FloatingActionBtn
 
@@ -194,10 +190,7 @@ FloatingActionBtn(
 );
 ```
 
-
-
 这里我们创建了一个大小为 56.0 的 FloatingActionBtn。当按钮被点击时，它会打印 'Button clicked!'。按钮的背景颜色是蓝色，前景颜色（即图标的颜色）是白色。按钮的阴影高度是 5.0，形状是圆角矩形，圆角半径是 10.0。
-
 
 ### T
 
@@ -220,7 +213,6 @@ T(
 );
 ```
 
-
 2. 使用 T.rich 构造函数
 
 ```dart
@@ -242,7 +234,6 @@ T.rich(
 );
 ```
 
-
 ### TextBtn
 
 TextBtn 继承自 Flutter 的 TextButton 类。与 TextButton 不同的是，TextBtn 添加了 width、height 和 disabled 参数，并在构造函数中使用 scaleHeight 和 scaleWidth 函数处理样式中的尺寸问题。
@@ -251,7 +242,6 @@ TextBtn 继承自 Flutter 的 TextButton 类。与 TextButton 不同的是，Tex
 - disabled 参数用于控制按钮是否禁用。当 disabled 为 true 时，按钮的 onPressed 回调会被设置为 null，使得按钮处于禁用状态。
 
 此外，TextBtn 还接受 TextButton 的所有参数，你可以根据需要使用它们。例如，你可以设置按钮的样式、文本等等。
-
 
 ```dart
 TextBtn(
@@ -268,11 +258,9 @@ TextBtn(
 );
 ```
 
-
 ### TSpan
 
 TSpan 继承自 Flutter 的 TextSpan 类。与 TextSpan 不同的是，TSpan 在构造函数中使用 scaleFont 函数处理样式中的字体大小和行高问题。
-
 
 ```dart
 TSpan(
@@ -311,7 +299,7 @@ SlideText(
 
 效果如下：
 
-![Alt text](srcst_WXxk6Qn23T.gif)
+![Alt text](./example/srcst_WXxk6Qn23T.gif)
 
 你可以通过 fontSize 参数设置文本大小。这个大小已经是基于 scaleFont 的尺寸了，因此你不需要手动调用 fontSize。如果需要控制高度，你可以指定 height 参数，它同样不需要手动调用 scaleHeight 参数。
 
@@ -352,29 +340,134 @@ ScrollableIconsCard(
 
 效果如下：
 
-![Alt text](./srcst_dce7l1wUPi.gif)
+![Alt text](./example/srcst_dce7l1wUPi.gif)
 
 ScrollableIconsCard 组件的各个参数默认值如下：
 
-| 参数名 | 类型 | 默认值 | 描述 |
-|:-|:-|:-|:-|
-| amount | int | 3 | 每一列的单元数量
-| spoutWidth | double | 80 | 滑槽宽度
-| sliderWidth | double | 40 | 滑块宽度
-| sliderHeight | double | 7 | 滑槽和滑块的高度
-| spoutColor | Color | Color.fromARGB(255, 183, 183, 183) | 滑槽的颜色
-| sliderColor | Color | Color.fromARGB(255, 255, 134, 13) | 滑块的颜色
+| 参数名       | 类型   | 默认值                             | 描述             |
+| :----------- | :----- | :--------------------------------- | :--------------- |
+| amount       | int    | 3                                  | 每一列的单元数量 |
+| spoutWidth   | double | 80                                 | 滑槽宽度         |
+| sliderWidth  | double | 40                                 | 滑块宽度         |
+| sliderHeight | double | 7                                  | 滑槽和滑块的高度 |
+| spoutColor   | Color  | Color.fromARGB(255, 183, 183, 183) | 滑槽的颜色       |
+| sliderColor  | Color  | Color.fromARGB(255, 255, 134, 13)  | 滑块的颜色       |
 
 其中宽度基于 scaleWidth、高度基于 scaleHeight。
+
+
+### `ShinyButton` 光影按钮组件
+
+
+光影按钮自带光影效果，通过指定一组颜色值实现按钮的光影动画，例如：
+
+```dart
+class ShinyButtonExample extends StatelessWidget {
+  const ShinyButtonExample({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: T(
+          '光影按钮',
+          fontSize: 18,
+        ),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            // 当仅传递 onPressed 的时候
+            ShinyButton(onPressed: () {}),
+
+            const SizedBox(height: 30),
+
+            // 如果没有任何参数则成为禁用状态
+            ShinyButton(),
+
+            const SizedBox(height: 30),
+
+            // 你也可以自定义圆角、颜色、子元素等参数
+            ShinyButton(
+              borderRadius: 20,
+              colors: const [
+                Color.fromARGB(255, 112, 255, 117),
+                Color.fromARGB(255, 0, 81, 3),
+                Color.fromARGB(255, 112, 255, 117),
+              ],
+              child: T(
+                '自定义一些属性',
+                color: Colors.amber,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+              onPressed: () {
+                print('Button Pressed');
+              },
+            ),
+
+            const SizedBox(height: 30),
+
+            // 使用 disabled 属性禁用按钮
+            ShinyButton(
+              borderRadius: 20,
+              width: 300,
+              colors: const [
+                Color.fromARGB(255, 112, 255, 117),
+                Color.fromARGB(255, 0, 81, 3),
+                Color.fromARGB(255, 112, 255, 117),
+              ],
+              disabled: true,
+              onPressed: () {},
+              child: T(
+                '使用 disabled 属性禁用按钮',
+                color: Colors.white,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+
+            const SizedBox(height: 30),
+
+            // 一个登陆按钮的示例
+            ShinyButton(
+              borderRadius: 60,
+              width: 310,
+              colors: const [
+                Color.fromARGB(255, 255, 224, 112),
+                Color.fromARGB(255, 220, 77, 0),
+                Color.fromARGB(255, 255, 224, 112),
+              ],
+              onPressed: () {},
+              child: T(
+                '登 陆',
+                color: Colors.white,
+                fontSize: 23,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+```
+
+其效果如下（其中跳动的效果是点击后产生的）：
+
+![1699612868395](image/README_CN/1699612868395.gif)
 
 
 ## 提示：
 
 你可以在[示例项目](https://github.com/jacklee1995/flutter_scale_design/blob/master/example)中找到更多的例子，如：
 
-|||
-|-|-|
-|![Alt text](srcst_2EGluNQWm9.png)|![Alt text](srcst_j2NirCBbhg.gif)|
+|                                           |                                           |
+| ----------------------------------------- | ----------------------------------------- |
+| ![Alt text](./example/srcst_2EGluNQWm9.png) | ![Alt text](./example/srcst_j2NirCBbhg.gif) |
 
 ## 许可证
 
