@@ -4,7 +4,7 @@
 
 The **Scale Design** library provides utilities for managing screen dimensions and creating responsive layouts in Flutter applications, allowing you to achieve screen size proportion scaling. It includes functions for scaling dimensions proportionally and obtaining screen width and height ratios. This is particularly useful when designing for different device screen sizes and orientations.
 
-## Installation
+# 1. Installation
 
 To use this package, you can run the following command:
 
@@ -14,7 +14,9 @@ flutter pub add scale_design
 
 This will automatically install the latest version in your project.
 
-## Usage
+# 2. Usage
+
+## 1. Usage of the size Toolset
 
 ### Initialize the `Scale` Class
 
@@ -57,7 +59,7 @@ double oneThirdScreenWidth = perWidth(3); // Gets one-third of the screen width
 double oneFifthScreenHeight = perHeight(5); // Gets one-fifth of the screen height
 ```
 
-## Example
+### Example
 
 Here's an example of using the `flutter_scale` package to create a responsive layout:
 
@@ -103,9 +105,9 @@ class MyApp extends StatelessWidget {
 
 In this example, the layout dimensions and font size are scaled proportionally to fit the current screen size, creating a responsive design.
 
-## Components
+### Components
 
-### ElevatedBtn
+#### ElevatedBtn
 
 ElevatedBtn inherits from Flutter's ElevatedButton class. Unlike ElevatedButton, ElevatedBtn adds width, height, and disabled parameters and uses the scaleHeight and scaleWidth functions to handle size issues in the constructor.
 
@@ -132,7 +134,7 @@ ElevatedBtn(
 );
 ```
 
-### OutlinedBtn
+#### OutlinedBtn
 
 OutlinedBtn inherits from Flutter's OutlinedButton class. Unlike OutlinedButton, OutlinedBtn adds width, height, and disabled parameters and uses the scaleHeight and scaleWidth functions to handle size issues in the constructor.
 
@@ -156,7 +158,7 @@ OutlinedBtn(
 );
 ```
 
-### FloatingActionBtn
+#### FloatingActionBtn
 
 FloatingActionBtn is a custom floating action button class that inherits from Flutter's FloatingActionButton class. Unlike FloatingActionButton, FloatingActionBtn adds size and disabled parameters and uses the scaleHeight and scaleWidth functions to handle size issues in the constructor.
 
@@ -165,7 +167,7 @@ FloatingActionBtn is a custom floating action button class that inherits from Fl
 
 Additionally, FloatingActionBtn accepts all the parameters of FloatingActionButton, and you can use them as needed. For example, you can set the button's color, shape, tooltip text, and more.
 
-#### Explanation of _DefaultHeroTag Class
+##### Explanation of _DefaultHeroTag Class
 
 _DefaultHeroTag is an internal class used to provide a default hero tag for FloatingActionButton. Hero tags are used in Flutter's Hero animations to identify widgets' starting and ending positions in the animation.
 
@@ -192,7 +194,7 @@ FloatingActionBtn(
 
 Here, we've created a FloatingActionBtn with a size of 56.0. When the button is clicked, it prints 'Button clicked!'. The button's background color is blue, foreground color (icon color) is white, elevation is 5.0, shape is a rounded rectangle with a border radius of 10.0.
 
-### T
+#### T
 
 T is a custom text class that inherits from Flutter's Text class. Unlike Text, T uses the scaleFont function in the constructor to handle font size and line height issues in the style.
 
@@ -234,7 +236,7 @@ T.rich(
 );
 ```
 
-### TextBtn
+#### TextBtn
 
 TextBtn inherits from Flutter's TextButton class. Unlike TextButton, TextBtn adds width, height, and disabled parameters and uses the scaleHeight and scaleWidth functions to handle size issues in the constructor.
 
@@ -258,7 +260,7 @@ TextBtn(
 );
 ```
 
-### TSpan
+#### TSpan
 
 TSpan inherits from Flutter's TextSpan class. Unlike TextSpan, TSpan uses the scaleFont function in the constructor to handle font size and line height issues in the style.
 
@@ -278,6 +280,150 @@ TSpan(
   fontWeight: FontWeight.bold, // Font weight
 );
 ```
+## 2. Usage of the Responsive Toolset
+
+The design philosophy behind the Responsive toolset is entirely different from the Size toolset.
+
+The former (Size toolset) is aimed at designing pages based on fixed UI design drafts. In such cases, regardless of the device on which the designer is working, the expected outcome is a more consistent effect across different devices. Applications designed in this manner tend to exhibit a stretched proportion effect when displayed on devices with significantly different sizes, which is actually favorable for pure mobile applications.
+
+Flutter is a powerful cross-platform development framework. Suppose you're developing an application that needs to be compatible with multiple platforms (including smartphones, PCs, and tablets) and you truly desire "write once, run on multiple platforms" functionality. In that case, you need the Responsive toolset.
+
+### Responsive Component
+
+The Responsive component is a tool for implementing responsive layouts in Flutter applications. It allows developers to display different layouts based on the screen width of the user's device, supporting mobile devices, tablets, and desktops. By providing different widgets for the mobile, tablet, and desktop parameters, you can customize layouts for different screen sizes.
+
+#### Usage
+
+1. Define layouts: First, define layouts for different types of devices. This means you need to prepare three widgets, each corresponding to mobile devices, tablets, and desktops.
+2. Use the Responsive component: In your interface, use the Responsive component and pass in the previously defined layout widgets.
+
+#### Example
+
+Suppose you have three layout components: MobileLayout, TabletLayout, and DesktopLayout. You can use the Responsive component as follows:
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:scale_design/scale_design.dart';
+
+class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Responsive(
+        mobile: MobileLayout(), // Mobile device layout
+        tablet: TabletLayout(), // Tablet device layout
+        desktop: DesktopLayout(), // Desktop device layout
+      ),
+    );
+  }
+}
+```
+
+In most cases, we have layouts for mobile devices and desktop devices. Tablet device layouts often fall somewhere between the two and can be substituted for either, so you don't necessarily have to explicitly specify a value for the `tablet` option; it will automatically use the same value as the `desktop` option.
+
+### ResponsiveScaffold Component
+
+**So, how can you quickly build a responsive application? The ResponsiveScaffold** component is a framework for rapidly constructing responsive navigation. It is a ready-made solution based on dual navigation bars.
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:app_service/app_service.dart';
+import 'package:scale_design/scale_design.dart';
+import '../../widgets/hr_v.dart';
+
+class IndexView extends StatelessWidget {
+  static const String url = '/index';
+  // 定义底部导航项
+  final List<BottomNavigationBarItem> _navBarItems = const [
+    BottomNavigationBarItem(
+      icon: Icon(Icons.home_outlined),
+      label: 'Home',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.library_music_outlined),
+      label: 'Business',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.account_circle_outlined),
+      label: 'School',
+    ),
+  ];
+
+  // 定义对应的页面
+  final List<Widget> _pages = const [
+    Page1(),
+    Page2(),
+    Page3(),
+  ];
+
+  const IndexView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ResposiveScaffold(
+      pages: _pages,
+      items: _navBarItems,
+      appBar: AppBar(
+        title: const Text('Scale Design ResposiveScaffold Demo'),
+        actions: const [
+          Wen(),
+          HrV(),
+          DarkModeSwitch(),
+          HrV(),
+          ThemeModal(),
+        ],
+      ),
+    );
+  }
+}
+
+class Page1 extends StatelessWidget {
+  const Page1({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+      child: Text(
+        'Page1',
+        style: TextStyle(fontSize: 60),
+      ),
+    );
+  }
+}
+
+class Page2 extends StatelessWidget {
+  const Page2({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+      child: Text(
+        'Page2',
+        style: TextStyle(fontSize: 60),
+      ),
+    );
+  }
+}
+
+class Page3 extends StatelessWidget {
+  const Page3({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+      child: Text(
+        'Page3',
+        style: TextStyle(fontSize: 60),
+      ),
+    );
+  }
+}
+
+```
+
+![1709480541223](image/README_CN/1709480541223.gif)
+
+## 3.其它组件
 
 ### SlideText
 
@@ -363,8 +509,6 @@ You can find more examples in the [scale design example](https://github.com/jack
 |                                           |                                           |
 | ----------------------------------------- | ----------------------------------------- |
 | ![Alt text](./example/srcst_2EGluNQWm9.png) | ![Alt text](./example/srcst_j2NirCBbhg.gif) |
-
-
 
 ### `ShinyButton` Widget
 
@@ -464,13 +608,9 @@ class ShinyButtonExample extends StatelessWidget {
 }
 ```
 
-
-
-
 The effect is as follows (the jumping effect is generated after clicking):
 
 ![1699612868395](./example/srcst_2868395.gif)
-
 
 ## License
 

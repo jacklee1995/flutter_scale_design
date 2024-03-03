@@ -3,7 +3,7 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 
 import '../../size.dart';
-import './t_span.dart';
+import 't_span.dart';
 
 class T extends Text {
   /// 创建一个 [T] 实例，该实例继承自 [Text] 类

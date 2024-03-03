@@ -9,17 +9,17 @@ class ElevatedBtn extends ElevatedButton {
 
   ElevatedBtn(
     String data, {
-    Key? key, // 控件的唯一标识
+    super.key, // 控件的唯一标识
     Widget? child, // 按钮上显示的子部件，不指定时，直接使用 data 指定的文本
     VoidCallback? onPressed, // 点击按钮时触发的回调函数
-    VoidCallback? onLongPress, // 长按按钮时触发的回调函数
-    ValueChanged<bool>? onHover, // 鼠标悬停在按钮上时触发的回调函数
-    ValueChanged<bool>? onFocusChange, // 控件获取或失去焦点时触发的回调函数
+    super.onLongPress, // 长按按钮时触发的回调函数
+    super.onHover, // 鼠标悬停在按钮上时触发的回调函数
+    super.onFocusChange, // 控件获取或失去焦点时触发的回调函数
     ButtonStyle? style, // 按钮的样式
-    FocusNode? focusNode, // 控件的焦点节点
-    bool autofocus = false, // 控件是否自动获取焦点
-    Clip clipBehavior = Clip.none, // 控件的裁剪行为
-    MaterialStatesController? statesController, // 控件的状态控制器
+    super.focusNode, // 控件的焦点节点
+    super.autofocus, // 控件是否自动获取焦点
+    super.clipBehavior, // 控件的裁剪行为
+    super.statesController, // 控件的状态控制器
     Color? foregroundColor, // 前景颜色
     Color? backgroundColor, // 背景颜色
     Color? disabledForegroundColor, // 禁用状态下的前景颜色
@@ -44,12 +44,7 @@ class ElevatedBtn extends ElevatedButton {
     TextStyle? textStyle, // 文本样式
     double? fontSize,
   }) : super(
-          key: key,
-          // 禁用时，事件失效
           onPressed: disabled ? null : onPressed,
-          onLongPress: onLongPress,
-          onHover: onHover,
-          onFocusChange: onFocusChange,
           style: style ??
               ElevatedButton.styleFrom(
                 foregroundColor: foregroundColor ?? Colors.white,
@@ -87,10 +82,6 @@ class ElevatedBtn extends ElevatedButton {
                 alignment: alignment,
                 splashFactory: splashFactory,
               ),
-          focusNode: focusNode,
-          autofocus: autofocus,
-          clipBehavior: clipBehavior,
-          statesController: statesController,
           child: child ?? Text(data),
         );
 }

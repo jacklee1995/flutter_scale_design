@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import '../../../scale_design.dart';
+import '../../../../scale_design.dart';
 
 /// [SlideText] is a widget that displays a list of text that scrolls vertically.
 /// [SlideText] 是一个显示垂直滚动文本列表的小部件。
@@ -27,12 +27,12 @@ class SlideText extends StatefulWidget {
 
   const SlideText(
     this.textList, {
-    Key? key,
+    super.key,
     this.duration = 2,
     this.fontSize = 14,
     this.height = 40,
     this.isScrollUp = true,
-  }) : super(key: key);
+  });
 
   @override
   State<SlideText> createState() => _SlideTextState();

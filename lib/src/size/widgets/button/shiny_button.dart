@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scale_design/src/size.dart';
+import '../../size.dart';
 
 /// 光影按钮
 class ShinyButton extends _ShinyButton {

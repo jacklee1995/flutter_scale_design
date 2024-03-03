@@ -4,7 +4,7 @@
 
 **Scale Design** 库提供了用于 Flutter 管理屏幕尺寸和创建响应式布局的实用工具，可以通过此包实现应用程序的屏幕尺寸比例缩放。它包括用于按比例缩放尺寸并获取屏幕宽度和高度比例的函数。这在需要适应不同设备屏幕尺寸和方向的设计中特别有用。
 
-## 安装
+## 1.安装
 
 要使用此包，可以运行 app 命令：
 
@@ -14,7 +14,9 @@ flutter pub add scale_design
 
 这将在你的项目中自动安装最先的版本。
 
-## 使用
+## 2. 用法
+
+## 1. size工具集用法
 
 ### 初始化 `Scale` 类
 
@@ -57,7 +59,7 @@ double oneThirdScreenWidth = perWidth(3); // 获取屏幕宽度的三分之一
 double oneFifthScreenHeight = perHeight(5); // 获取屏幕高度的五分之一
 ```
 
-## 示例
+### 示例
 
 以下是使用 `flutter_scale` 包创建响应式布局的示例：
 
@@ -103,9 +105,9 @@ class MyApp extends StatelessWidget {
 
 在此示例中，布局尺寸和字体大小按比例缩放以适应当前屏幕大小，从而创建了响应式设计。
 
-## 组件
+### 组件
 
-### ElevatedBtn
+#### ElevatedBtn
 
 ElevatedBtn 继承自 Flutter 的 ElevatedButton 类。与 ElevatedButton 不同的是，ElevatedBtn 添加了 width、height 和 disabled 参数，并在构造函数中使用 scaleHeight 和 scaleWidth 函数处理样式中的尺寸问题。
 
@@ -132,7 +134,7 @@ ElevatedBtn(
 );
 ```
 
-### OutlinedBtn
+#### OutlinedBtn
 
 OutlinedBtn 继承自 Flutter 的 OutlinedButton 类。与 OutlinedButton 不同的是，OutlinedBtn 添加了 width、height 和 disabled 参数，并在构造函数中使用 scaleHeight 和 scaleWidth 函数处理样式中的尺寸问题。
 
@@ -156,7 +158,7 @@ OutlinedBtn(
 );
 ```
 
-### FloatingActionBtn
+#### FloatingActionBtn
 
 FloatingActionBtn 是一个自定义的浮动动作按钮类，它继承自 Flutter 的 FloatingActionButton 类。与 FloatingActionButton 不同的是，FloatingActionBtn 添加了 size 和 disabled 参数，并在构造函数中使用 scaleHeight 和 scaleWidth 函数处理样式中的尺寸问题。
 
@@ -165,7 +167,7 @@ FloatingActionBtn 是一个自定义的浮动动作按钮类，它继承自 Flut
 
 此外，FloatingActionBtn 还接受 FloatingActionButton 的所有参数，你可以根据需要使用它们。例如，你可以设置按钮的颜色、形状、提示文本等等。
 
-#### _DefaultHeroTag 类说明
+##### _DefaultHeroTag 类说明
 
 _DefaultHeroTag 是一个内部类，它用于为 FloatingActionButton 提供默认的 hero tag。Hero tag 在 Flutter 的 Hero 动画中使用，用于标识动画的开始和结束位置的 widget。
 
@@ -192,7 +194,7 @@ FloatingActionBtn(
 
 这里我们创建了一个大小为 56.0 的 FloatingActionBtn。当按钮被点击时，它会打印 'Button clicked!'。按钮的背景颜色是蓝色，前景颜色（即图标的颜色）是白色。按钮的阴影高度是 5.0，形状是圆角矩形，圆角半径是 10.0。
 
-### T
+#### T
 
 T 它继承自 Flutter 的 Text 类。与 Text 不同的是，T 在构造函数中使用 scaleFont 函数处理样式中的字体大小和行高问题。
 
@@ -234,7 +236,7 @@ T.rich(
 );
 ```
 
-### TextBtn
+#### TextBtn
 
 TextBtn 继承自 Flutter 的 TextButton 类。与 TextButton 不同的是，TextBtn 添加了 width、height 和 disabled 参数，并在构造函数中使用 scaleHeight 和 scaleWidth 函数处理样式中的尺寸问题。
 
@@ -258,7 +260,7 @@ TextBtn(
 );
 ```
 
-### TSpan
+#### TSpan
 
 TSpan 继承自 Flutter 的 TextSpan 类。与 TextSpan 不同的是，TSpan 在构造函数中使用 scaleFont 函数处理样式中的字体大小和行高问题。
 
@@ -278,6 +280,154 @@ TSpan(
   fontWeight: FontWeight.bold, // 字体权重
 );
 ```
+
+## 2. Resposive工具集用法
+
+Resposive工具集的设计理念是与Size工具集完全不一样的。
+
+前者（Size工具集）旨在完成固定UI设计稿的页面设计，这种情况下期望不论设计师在何种设备上进行设计，当它跨不同设别时候的效果是更加一致的。基于这种方式设计的应用在跨尺寸比例较大的设备上的效果更加像是在进行比例拉伸，事实上这种方式在纯移动端应用上是不错的。
+
+Flutter是一个强大的跨端开发框架，假设你所写的是一个同时兼容多个平台（既包括手机、也包括PC、平板）的应用，期盼真正的“一次开发、多端运行”，那么你需要Resposive工具集。
+
+### Responsive组件
+
+
+Responsive 组件是一个用于在 Flutter 应用中实现响应式布局的工具。它允许开发者根据用户设备的屏幕宽度来展示不同的布局，支持移动设备、平板设备和桌面设备。通过提供不同的 Widget 给 mobile、tablet 和 desktop 参数，你可以为不同的屏幕尺寸定制布局。
+
+#### 用法
+
+1. 定义布局：首先，为不同的设备类型定义布局。这意味着你需要准备三个 Widget，分别对应移动设备、平板和桌面。
+2. 使用 Responsive 组件：在你的界面中，使用 Responsive 组件，并传入之前定义的布局 Widget。
+
+#### 示例
+
+假设你有三个布局组件：MobileLayout、TabletLayout 和 DesktopLayout。你可以这样使用 Responsive 组件：
+
+```dart
+
+import 'package:flutter/material.dart';
+import 'package:scale_design/scale_design.dart';
+
+class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Responsive(
+        mobile: MobileLayout(), // 移动设备布局
+        tablet: TabletLayout(), // 平板设备布局
+        desktop: DesktopLayout(), // 桌面设备布局
+      ),
+    );
+  }
+}
+```
+
+多数情况下，我们移动设备布局和桌面设备布局。介于两者之间的平板设备布局往往使用前两者替代，因此你不一定要显示指定一个 `tablet`的选项值，它将自动使用与 `desktop`选项相同的值。
+
+
+### ResposiveScaffold 组件
+
+**那么有什么办法快速搭建一个响应式的应用呢？ResposiveScaffold** 组件是一个快速构建响应式导航的框架。它是一个现成的基于双导航栏，
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:app_service/app_service.dart';
+import 'package:scale_design/scale_design.dart';
+import '../../widgets/hr_v.dart';
+
+class IndexView extends StatelessWidget {
+  static const String url = '/index';
+  // 定义底部导航项
+  final List<BottomNavigationBarItem> _navBarItems = const [
+    BottomNavigationBarItem(
+      icon: Icon(Icons.home_outlined),
+      label: 'Home',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.library_music_outlined),
+      label: 'Business',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.account_circle_outlined),
+      label: 'School',
+    ),
+  ];
+
+  // 定义对应的页面
+  final List<Widget> _pages = const [
+    Page1(),
+    Page2(),
+    Page3(),
+  ];
+
+  const IndexView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ResposiveScaffold(
+      pages: _pages,
+      items: _navBarItems,
+      appBar: AppBar(
+        title: const Text('Scale Design ResposiveScaffold Demo'),
+        actions: const [
+          Wen(),
+          HrV(),
+          DarkModeSwitch(),
+          HrV(),
+          ThemeModal(),
+        ],
+      ),
+    );
+  }
+}
+
+class Page1 extends StatelessWidget {
+  const Page1({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+      child: Text(
+        'Page1',
+        style: TextStyle(fontSize: 60),
+      ),
+    );
+  }
+}
+
+class Page2 extends StatelessWidget {
+  const Page2({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+      child: Text(
+        'Page2',
+        style: TextStyle(fontSize: 60),
+      ),
+    );
+  }
+}
+
+class Page3 extends StatelessWidget {
+  const Page3({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+      child: Text(
+        'Page3',
+        style: TextStyle(fontSize: 60),
+      ),
+    );
+  }
+}
+
+```
+
+![1709480541223](image/README_CN/1709480541223.gif)
+
+## 3.其它组件
 
 ### SlideText
 
@@ -355,9 +505,7 @@ ScrollableIconsCard 组件的各个参数默认值如下：
 
 其中宽度基于 scaleWidth、高度基于 scaleHeight。
 
-
 ### `ShinyButton` 光影按钮组件
-
 
 光影按钮自带光影效果，通过指定一组颜色值实现按钮的光影动画，例如：
 
@@ -459,7 +607,6 @@ class ShinyButtonExample extends StatelessWidget {
 其效果如下（其中跳动的效果是点击后产生的）：
 
 ![1699612868395](image/README_CN/1699612868395.gif)
-
 
 ## 提示：
 

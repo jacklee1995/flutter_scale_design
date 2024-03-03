@@ -1,7 +1,8 @@
 import 'dart:core';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:scale_design/scale_design.dart';
+import '../size.dart';
+import '../widgets/text/t.dart';
 
 /// Widget class for displaying a set of horizontally scrolling icon cards.
 /// 用于显示一组横向滚动的图标卡片的 Widget 类

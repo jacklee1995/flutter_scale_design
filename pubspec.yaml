@@ -1,6 +1,6 @@
 name: scale_design
 description: A Flutter component library based on relative size design.
-version: 0.0.8
+version: 0.0.9
 auth:
   name: Jcak Lee
   email: 291148484@163.com

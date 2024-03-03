@@ -9,7 +9,7 @@ class OutlinedBtn extends OutlinedButton {
 
   OutlinedBtn(
     String data, {
-    Key? key,
+    super.key,
     Widget? child,
     VoidCallback? onPressed,
     ButtonStyle? style,
@@ -18,7 +18,6 @@ class OutlinedBtn extends OutlinedButton {
     this.disabled = false,
     double? fontSize,
   }) : super(
-          key: key,
           onPressed: disabled ? null : onPressed,
           style: style ??
               OutlinedButton.styleFrom(
